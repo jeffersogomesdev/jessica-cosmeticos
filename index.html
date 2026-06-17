@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jessica Cosméticos & Perfumes</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:url("img/20.png");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    color:#222;
+}
+
+
+header{
+    background:white;
+    color:#8e1b5c;
+    text-align:center;
+    padding:25px 20px;
+    border-bottom:1px solid #eee;
+}
+
+nav{
+    background:white;
+    text-align:center;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+nav a{
+    color:#222;
+    text-decoration:none;
+    margin:8px;
+    padding:10px 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#d63384;
+}
+
+.aviso{
+    background:#fff3cd;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    max-width:900px;
+    margin:25px auto;
+    font-weight:bold;
+}
+.banner{
+    background:url("img/coraçao");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+.banner a{
+    display:inline-block;
+    margin-top:20px;
+    background:#25d366;
+    color:white;
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.banner h2{
+    color:white;
+    font-size:42px;
+    margin-bottom:10px;
+    
+    
+}
+
+.banner p{
+    font-size:20px;
+}
+ 
+
+h2{
+    color:#8e1b5c;
+    text-align:center;
+    font-size:30px;
+}
+
+.produtos{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:28px;
+    max-width:1200px;
+    margin:0 auto 60px;
+    padding:0 20px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    box-shadow:0 4px 14px rgba(0,0,0,0.12);
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+}
+
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.card-conteudo{
+    padding:22px;
+    display:flex;
+    flex-direction:column;
+    flex-grow:1;
+}
+
+.preco{
+    font-size:24px;
+    color:#198754;
+    font-weight:bold;
+}
+
+.botao{
+    display:block;
+    text-align:center;
+    background:#25d366;
+    color:white;
+    text-decoration:none;
+    padding:13px;
+    border-radius:10px;
+    font-weight:bold;
+    margin-top:auto;
+}
+
+.botao{
+    margin-top:auto;
+}
+.pesquisa{
+    text-align:center;
+    margin:10px auto 30px;
+}
+.pesquisa input{
+    width:80%;
+    max-width:500px;
+    padding:15px 20px;
+    border:2px solid #f06292;
+    border-radius:30px;
+    font-size:16px;
+    outline:none;
+}
+.contador{
+    text-align:center;
+    font-weight:bold;
+    color:#8e1b5c;
+    margin:20px 0;
+}
+footer{
+    background:#8e1b5c;
+    color:white;
+    text-align:center;
+    padding:22px;
+}
+
+@media(max-width:900px){
+    .produtos{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media(max-width:600px){
+    .produtos{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jessica Cosméticos & Perfumes</title>
+
+    <link rel="icon" type="image/png" href="favicon.png/perfume-png.png">
+
+    <style>
+        /* TODO O SEU CSS */
+    </style>
+</head>
+
+<body>
+
+<nav>
+<a href="#Natura">Natura</a>
+<a href="#boticario">O Boticário</a>
+<a href="#Avon">Avon</a>
+<a href="#eudora">Eudora</a>
+<a href="#contato">WhatsApp</a>
+</nav>
+
+
+<section class="banner">
+    <h2>Jessica Cosméticos & Perfumes</h2>
+    <p>Natura • O Boticário • Avon • Eudora</p>
+    <a href="#contato">Pedir pelo WhatsApp</a>
+</section>
+
+<div class="aviso">
+📦 Todos os produtos são vendidos sob encomenda.
+Consulte disponibilidade e prazo pelo WhatsApp.
+</div>
+
+<p class="contador">
+👀 Visitas: <span id="contadorVisitas">0</span>
+</p>
+
+<div class="pesquisa">
+    <input type="text" id="campoPesquisa" placeholder="Pesquisar produto...">
+</div>
+
+<div class="categoria">
+    <h2>🌸 Natura</h2>
+    <p>Perfumes, hidratantes e cuidados corporais.</p>
+</div>
+<section id="Natura">
+<div class="produtos">
+
+<div class="card">
+<img src="sevenr-html.jpeg" alt="Sève Rosas e Amêndoas">
+<div class="card-conteudo">
+<p class="marca">Natura</p>
+<h3>Sève Rosas e Amêndoas</h3>
+<p>Óleo corporal 200ml com fragrância suave e elegante.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">R$ 69,90</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Sève Rosas e Amêndoas.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="homem-html.jpeg" alt="Natura Homem Coragio">
+<div class="card-conteudo">
+<p class="marca">Natura</p>
+<h3>Natura Homem Coragio</h3>
+<p>Perfume masculino marcante e sofisticado.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">R$ 289,90</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Natura Homem Coragio.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="cremecorpov-html.jpeg" alt="Tododia Cereja e Avelã">
+<div class="card-conteudo">
+<p class="marca">Natura</p>
+<h3>Tododia Cereja e Avelã</h3>
+<p>Creme hidratante corporal com manteiga de cacau e óleo de linhaça.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Tododia Cereja e Avelã.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="kaiakextremo-html.jpeg" alt="Kaiak Extremo">
+<div class="card-conteudo">
+<p class="marca">Natura</p>
+<h3>Kaiak Extremo</h3>
+<p>Produto masculino da linha Kaiak, com fragrância intensa e refrescante.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Kaiak Extremo.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+
+<div class="card">
+<img src="kitluna-html.jpeg" alt="Luna Glow">
+<div class="card-conteudo">
+<p class="marca">Natura</p>
+<h3>Luna Glow</h3>
+<p>Kit com fragrância Luna e body splash iluminador.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Luna Glow.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="essencialAto-html.png" alt="Essencial Ato">  
+<div class="card-conteudo">
+<p class="marca">Natura</p>
+<h3>Essencial Ato</h3>
+<p>Perfume intenso com combinação envolvente de madeiras e especiarias.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse em outros produtos.">Pedir pelo WhatsApp</a>   
+
+</div>
+</div>
+
+<div class="card">
+<img src="essencialhomen-html.png" alt="Essencial Masculino">
+<div class="card-conteudo">
+<p class="marca">Natura</p>
+<h3>Essencial Masculino</h3>  
+<p>Perfume masculino sofisticado, com notas marcantes e alta fixação.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Essencial Masculino.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="Essencialsenti-html.png" alt="Essencial Senti">
+<div class="card-conteudo">
+<p class="marca">Natura</p>
+<h3>Essencial Senti</h3>
+<p>Fragrância moderna e elegante para homens que valorizam autenticidade.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Essencial Senti.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+ 
+
+<div class="card">
+<img src="essencialvanilla-html.png" alt="Essencial Oud Vanilla">
+<div class="card-conteudo">
+<p class="marca">Natura</p>
+<h3>Essencial Oud Vanilla</h3>
+<p>Fragrância sofisticada que une a intensidade do oud com a suavidade da baunilha.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Essencial Oud Vanilla.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+
+<div class="card">
+<img src="naturahomen-html.png" alt="Fragrância Natura Homem">
+<div class="card-conteudo">
+<p class="marca">Natura</p>
+<h3>Fragrância Natura Homem</h3>
+<p>Fragrância masculina clássica e versátil para todas as ocasiões.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Fragrância Natura Homem.">Pedir pelo WhatsApp</a>
+</div>
+</div> 
+
+
+<div class="card">
+<img src="HomemAromático-html.png" alt="Perfume Homem Aromático">
+<div class="card-conteudo">
+<p class="marca">Natura</p>
+<h3>Perfume Homem Aromático</h3>
+<p>Fragrância masculina clássica e versátil para todas as ocasiões.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Perfume Homem Aromático.">Pedir pelo WhatsApp</a>
+
+</div>
+</div>
+
+<div class="card">
+<img src="HomemVerum-html.png" alt="Homem Verum">
+<div class="card-conteudo">
+<p class="marca">Natura</p>
+<h3>Homem Verum</h3>
+<p>Perfume intenso e sofisticado com personalidade marcante.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Homem  Verum.">Pedir pelo WhatsApp</a>     
+
+</div>
+</div>
+
+<div class="card">
+<img src="IlíaCompleta-html.png" alt="Ilía Completa">
+<div class="card-conteudo">
+<p class="marca">Natura</p>
+<h3>Ilía Completa</h3>
+<p>Fragrância feminina delicada e elegante para o dia a dia.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Ilía Completa.">Pedir pelo WhatsApp</a>
+
+</div>
+</div>
+
+<div class="card">
+<img src="IlíaPlena-html.png" alt="Ilía Plena">
+<div class="card-conteudo">
+<p class="marca">Natura</p>
+<h3>Ilía Plena</h3>
+<p>Perfume feminino moderno com toque floral sofisticado.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Ilía Plena.">Pedir pelo WhatsApp</a>
+
+</div>
+</div>
+
+<div class="card">
+<img src="IlíaSecreto-html.png" alt="Ilía Secreto">
+<div class="card-conteudo">
+<p class="marca">Natura</p>
+<h3>Ilía Secreto</h3>
+<p>Perfume feminino marcante, floral e envolvente.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Ilía Secreto.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="açai-html.png" alt="Kit Ekos Açai">
+<div class="card-conteudo">
+<p class="marca">Natura</p>
+<h3>Kit Ekos Açai</h3>
+<p>Kit com produtos da linha Ekos Açai para cuidados com a pele.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Kit Ekos Açai.">Pedir pelo WhatsApp</a>
+
+</div>
+</div>
+
+<div class="card">
+<img src="maracujaekos-html.png" alt="Creme Ekos Maracujá">
+<div class="card-conteudo"> 
+<p class="marca">Natura</p>
+<h3>Creme Ekos Maracujá</h3>
+<p>Creme Corporal Ekos Maracujá para cuidados com a pele.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Creme Ekos Maracujá.">Pedir pelo WhatsApp</a>
+
+</div>
+</div>
+
+<div class="card">
+<img src="mamaebb-html.png" alt="Perfume Mamãe e Bebê">
+<div class="card-conteudo"> 
+<p class="marca">Natura</p>
+<h3>Perfume Mamãe e Bebê</h3>
+<p>Perfume suave e delicado para bebês e mães.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Perfume Mamãe e Bebê.">Pedir pelo WhatsApp</a>
+
+</div>
+</div>
+
+<div class="card">
+<img src="NaturaBothânica-html.png" alt="Natura Bothânica">
+<div class="card-conteudo">
+<p class="marca">Natura</p>
+<h3>Natura Bothânica</h3>
+<p>Linha de aromatizadores e cuidados para ambientes, com fragrâncias sofisticadas que trazem conforto e bem-estar para a casa.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Natura Bothânica.">Pedir pelo WhatsApp</a>
+
+</div>
+</div>
+
+<div class="card">
+<img src="NaturaEkos RioFesta-html.png" alt="Natura Ekos Rio Festa">
+<div class="card-conteudo">
+<p class="marca">Natura</p>
+<h3>Natura Ekos Rio Festa</h3>
+<p>Fragrância inspirada na energia vibrante do Brasil, com aroma marcante e embalagem especial para presente.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Natura Ekos Rio Festa.">Pedir pelo WhatsApp</a>
+
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="boticario">
+
+<h2>🌺 O Boticário</h2>
+
+<div class="produtos">
+
+<div class="card">
+<img src="vaca-html.jpeg" alt="Kit Cuide-se Bem De leite">
+<div class="card-conteudo">
+<p class="marca">O Boticário</p>
+<h3>Kit Cuide-se Bem Deleite</h3>
+<p>Kit corporal da linha Deleite para hidratação diária.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">R$ 146,90</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Kit Cuide-se Bem Deleite.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="lilydourado-html.png" alt="Lily Creme Acetinado Dourado">
+<div class="card-conteudo">
+<p class="marca">O Boticário</p>
+<h3>Lily Creme Acetinado Dourado</h3>   
+<p>Creme acetinado hidratante da linha Lily, com fragrância sofisticada e hidratação prolongada.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Lily Creme Acetinado Dourado.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="lov4-html.png" alt="Love Lily Creme Acetinado">
+<div class="card-conteudo">
+<p class="marca">O Boticário</p>
+<h3>Love Lily Creme Acetinado</h3>
+<p>Creme hidratante acetinado com fragrância floral marcante da linha Love Lily.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Lily Creme Acetinado.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="melancia-html (2).png" alt="Cuide-se Bem Melancia">
+<div class="card-conteudo">     
+<p class="marca">O Boticário</p>
+<h3>Cuide-se Bem Melancia</h3>
+<p>Loção hidratante corporal com fragrância refrescante de melancia.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Cuide-se Bem Melancia.">Pedir pelo WhatsApp</a>
+</div>  
+</div>
+
+<div class="card">
+<img src="oleolily-html.png" alt="Lily Óleo Corporal">
+<div class="card-conteudo">             
+<p class="marca">O Boticário</p>
+<h3>Lily Óleo Corporal</h3>    
+<p>Óleo corporal perfumado da linha Lily para pele macia e perfumada.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Lily Óleo Corporal.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+
+
+<div class="card">
+<img src="cremedeleite-html.jpeg" alt="Manteiga Hidratante Deleite">
+<div class="card-conteudo">
+<p class="marca">O Boticário</p>
+<h3>Manteiga Hidratante e Desodorante Corporal</h3>
+<p>Hidratação intensa e fragrância deliciosa da linha Deleite.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">R$ 72,90</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Manteiga Hidratante e Desodorante Corporal.">Pedir pelo WhatsApp</a>
+
+
+</div>
+</div> 
+
+<div class="card">
+<img src="lyly-html.jpeg" alt="Lily Splash e Creme">
+<div class="card-conteudo">
+<p class="marca">O Boticário</p>
+<h3>Lily Splash + Creme Acetinado</h3>
+<p>Splash 200ml + creme acetinado 250g da linha Lily.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">R$ 189,90</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Lily Splash + Creme Acetinado.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="bodysplash-lilac.jpeg" alt="Nativa SPA Lilac">
+<div class="card-conteudo">
+<p class="marca">O Boticário</p>
+<h3>Nativa SPA Lilac</h3>
+<p>Body splash floral sofisticado, fresco e elegante.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Nativa SPA Lilac.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="egeodolce-html.jpeg" alt="Egeo Dolce">
+<div class="card-conteudo">
+<p class="marca">O Boticário</p>
+<h3>Egeo Dolce</h3>
+<p>Fragrância doce, marcante e divertida.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Egeo Dolce.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="floratta-html.jpeg" alt="Floratta Red">
+<div class="card-conteudo">
+<p class="marca">O Boticário</p>
+<h3>Floratta Red</h3>
+<p>Kit feminino sofisticado, ideal para presente.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Floratta Red.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="malbeckit-html.png" alt="Kit Malbec">
+<div class="card-conteudo">
+<p class="marca">O Boticário</p>
+<h3>Kit Malbec</h3>
+<p>Kit masculino sofisticado, ideal para presente.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Kit Malbec.">Pedir pelo WhatsApp</a>
+
+</div>
+</div>
+
+
+
+<div class="card">
+<img src="diversos-html.png" alt="outros produtos">
+<div class="card-conteudo">
+<p class="marca">O Boticário</p>
+<h3>outros produtos</h3>
+<p>entre outros produtos, ideal para presente.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse em outros produtos.">Pedir pelo WhatsApp</a>
+
+</div>
+</div>
+
+</div> <!-- fecha produtos -->
+</section> <!-- fecha boticario -->
+
+
+<section id="Avon">
+
+<h2>🌺 Avon </h2>
+
+<div class="produtos">
+
+
+<div class="card">
+<img src="FarAway-html.png" alt="Avon Far Away">
+<div class="card-conteudo">
+<p class="marca">Avon</p>
+<h3>Far Away</h3>
+<p>Uma fragrância envolvente e sofisticada que transmite elegância e feminilidade em cada detalhe.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Avon Far Away.">Pedir pelo WhatsApp</a>
+
+</div>
+</div>
+
+<div class="card">
+<img src="KitAttractionCloser-html.png" alt="Kit Attraction Closer For Her">
+<div class="card-conteudo">
+<p class="marca">Avon</p>
+<h3>Kit Attraction Closer For Her</h3>
+<p>Kit feminino com fragrância envolvente e creme corporal perfumado, ideal para presentear.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Kit Attraction Closer For Her.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="Attraction CloserForHer-html.png" alt="Avon Attraction Closer">
+<div class="card-conteudo">
+<p class="marca">Avon</p>
+<h3>Avon Attraction Closer</h3>
+<p>Perfume feminino envolvente com notas doces e sensuais.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Avon Attraction Closer.">Pedir pelo WhatsApp</a>
+
+</div>
+</div>
+
+<div class="card">
+<img src="Attractionvermelho-html.png" alt="Avon Attraction Closer For Her">
+<div class="card-conteudo">
+<p class="marca">Avon</p>
+<h3>Avon Attraction Closer For Her</h3>
+<p>Perfume feminino envolvente com notas doces e sensuais.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Avon Attraction Closer For Her.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="azulatration-html.png" alt="Avon Attraction Closer For Him">
+<div class="card-conteudo">
+<p class="marca">Avon</p>
+<h3>Attraction Closer For Him</h3>
+<p>Fragrância masculina envolvente com notas frescas e amadeiradas, ideal para homens confiantes e modernos.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Avon Attraction Closer For Him.">Pedir pelo WhatsApp</a>
+
+</div>
+</div>
+
+<div class="card">
+<img src="LovU-html.png" alt="Lov U">
+<div class="card-conteudo">
+<p class="marca">Avon</p>
+<h3>Lov U</h3>
+<p>Perfume feminino delicado e romântico, com fragrância floral suave e envolvente.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Lov U.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="LovUNigth-html.png" alt="Lov U Date Night">
+<div class="card-conteudo">
+<p class="marca">Avon</p>
+<h3>Lov U Date Night</h3>
+<p>Fragrância feminina marcante e sofisticada, perfeita para momentos especiais.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Lov U Date Night.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="LovUTogether-html.png" alt="Lov U Together">
+<div class="card-conteudo">
+<p class="marca">Avon</p>
+<h3>Lov U Together</h3>
+<p>Perfume feminino alegre e apaixonante, com notas florais e frutadas delicadas.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Lov U Together.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="rareflowers-html.png" alt="Rare Flowers Night Orchid">
+<div class="card-conteudo">
+<p class="marca">Avon</p>
+<h3>Rare Flowers Night Orchid</h3>
+<p>Fragrância floral sofisticada inspirada na beleza da orquídea, elegante e envolvente.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Rare Flowers Night Orchid.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="today-html (2).png" alt="Today Tomorrow Always This Love">
+<div class="card-conteudo">
+<p class="marca">Avon</p>
+<h3>Today Tomorrow Always This Love</h3>
+<p>Fragrância feminina romântica e delicada, criada para celebrar momentos especiais e inesquecíveis.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Today Tomorrow Always This Love.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="Perceive Dew-html.png" alt="Perceive Dew">
+<div class="card-conteudo">
+<p class="marca">Avon</p>
+<h3>Perceive Dew</h3>
+<p>Perfume feminino refrescante com notas florais e verdes, perfeito para o dia a dia.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Perceive Dew.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="Viva La Vita-html.png" alt="Viva La Vita">
+<div class="card-conteudo">
+<p class="marca">Avon</p>
+<h3>Viva La Vita</h3>
+<p>Fragrância feminina sofisticada e alegre, inspirada na beleza e nos prazeres da vida.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Viva La Vita.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="depilaavov-html.png" alt="Avon Care Depilatório">
+<div class="card-conteudo">
+<p class="marca">Avon</p>
+<h3>Avon Care Depilatório 3 em 1</h3>
+<p>Creme depilatório corporal com aloe vera.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Avon Care Depilatório.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="fixador-html.png" alt="Spray Fixador Avon">
+<div class="card-conteudo">
+<p class="marca">Avon</p>
+<h3>Spray Fixador Avon</h3>
+<p>Ajuda a fixar a maquiagem por mais tempo, proporcionando acabamento uniforme e duradouro.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Spray Fixador Avon.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+
+<div class="card">
+<img src="avoncaremen-html.png" alt="Kit Avon Care Men">
+<div class="card-conteudo">
+<p class="marca">Avon</p>
+<h3>Avon Care Men</h3>
+<p>Kit completo para o cuidado masculino, com gel de barbear, loção pós-barba e antitranspirante de longa duração.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Avon Care Men.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+
+<div class="card">
+<img src="avonromã-html.png" alt="Avon Care Romã">
+<div class="card-conteudo">
+<p class="marca">Avon</p>
+<h3>Avon Care Romã</h3>
+<p>Cuidados diários com o poder antioxidante da romã, deixando a pele hidratada, suave e perfumada.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Avon Care Romã.">Pedir pelo WhatsApp</a>
+
+
+</div>
+</div>
+
+</div> <!-- fecha produtos -->
+</section> <!-- fecha Avon -->
+
+
+
+
+<section id="eudora">
+
+<h2>🌺 Eudora</h2>
+
+<div class="produtos">
+
+
+<div class="card">
+<img src="roxo-html.png" alt="Eudora Eau de Parfum">
+<div class="card-conteudo">
+<p class="marca">Eudora</p>
+<h3>Eudora Eau de Parfum</h3>
+<p>Fragrância sofisticada e marcante, com combinação envolvente de notas florais e amadeiradas.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Eudora Eau de Parfum.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="vermelho-html.png" alt="Eudora Rouge">
+<div class="card-conteudo">
+<p class="marca">Eudora</p>
+<h3>Eudora Rouge</h3>
+<p>Perfume feminino intenso e sofisticado, criado para mulheres confiantes e elegantes.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Eudora Rouge.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="chocolate-html.png" alt="Eudora Kiss Me Delicious">
+<div class="card-conteudo">
+<p class="marca">Eudora</p>
+<h3>Eudora Kiss Me Delicious</h3>
+<p>Fragrância envolvente com toque adocicado e irresistível, inspirada em momentos de prazer.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Eudora Kiss Me Delicious.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="kiyeudora-html.png" alt="Kit Eudora">
+<div class="card-conteudo">
+<p class="marca">Eudora</p>
+<h3>Kit Eudora Eau de Parfum</h3>
+<p>Kit especial com perfume e hidratante corporal, ideal para presentear em qualquer ocasião.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Kit Eudora Eau de Parfum.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="laranja-html.png" alt="Eudora Deluxe">
+<div class="card-conteudo">
+<p class="marca">Eudora</p>
+<h3>Eudora Deluxe</h3>
+<p>Fragrância elegante com notas frutadas e cítricas, perfeita para o dia a dia e ocasiões especiais.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Eudora Deluxe.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="baccio-html.png" alt="Bacio di Latte Eudora">
+<div class="card-conteudo">
+<p class="marca">Eudora</p>
+<h3>Bacio di Latte Instance</h3>
+<p>Linha corporal inspirada na cremosidade do gelato italiano, com hidratação intensa e fragrância deliciosa.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse na linha Bacio di Latte Eudora.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+
+
+<div class="card">
+<img src="mascarahidra-html.png" alt="Siàge Cronology">
+<div class="card-conteudo">
+<p class="marca">Eudora</p>
+<h3>Siàge Pro Cronology</h3>
+<p>Máscara capilar para hidratação e reconstrução dos fios.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse no Siàge Pro Cronology.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+
+
+
+
+<div class="card">
+<img src="kithidraeudo-html.png" alt="Siàge Cica Therapy">
+<div class="card-conteudo">
+<p class="marca">Eudora</p>
+<h3>Siàge Cica Therapy</h3>
+<p>Linha capilar desenvolvida para reparar, fortalecer e restaurar fios danificados, proporcionando hidratação e brilho.</p>
+<p class="status">📦 Sob Encomenda</p>
+<p class="preco">Consultar preço</p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Tenho interesse na linha Siàge Cica Therapy.">Pedir pelo WhatsApp</a>
+</div>
+</div>
+</div> <!-- fecha produtos -->
+</section> <!-- fecha eudora -->
+
+
+<section id="contato">
+<h2>📱 Encomendas</h2>
+<p style="text-align:center;">Gostou de algum produto? Fale pelo WhatsApp.</p>
+<p style="text-align:center;"><strong>(21) 99361-1700</strong></p>
+<a class="botao" target="_blank" href="https://wa.me/5521993611700?text=Olá! Gostaria de saber mais sobre os produtos da Jessica Cosméticos & Perfumes.">Chamar no WhatsApp</a>
+</section>
+
+<footer>
+<p>© 2026 Jessica Cosméticos & Perfumes</p>
+<p>Catálogo online de produtos sob encomenda</p>
+</footer>
+
+<script>
+const campoPesquisa = document.getElementById("campoPesquisa");
+const cards = document.querySelectorAll(".card");
+
+campoPesquisa.addEventListener("input", function(){
+    const texto = campoPesquisa.value.toLowerCase();
+
+    cards.forEach(card => {
+        const produto = card.innerText.toLowerCase();
+
+        if(produto.includes(texto)){
+            card.style.display = "flex";
+        } else {
+            card.style.display = "none";
+        }
+    });
+});
+
+let visitas = localStorage.getItem("visitas");
+
+if(visitas === null){
+    visitas = 1;
+} else {
+    visitas = Number(visitas) + 1;
+}
+
+localStorage.setItem("visitas", visitas);
+document.getElementById("contadorVisitas").innerText = visitas;
+</script>
+
+</body>
+</html>
